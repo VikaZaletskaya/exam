@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    background-color: #eeeeee;
+    position: relative;
+}
+.content {
+    width: 80%;
+    max-width: 1270px;
+    margin: 0 auto;
+    height: 100%;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 85px;
+}
+.nav__toogle {
+    position: relative;
+    display: none;
+    border: 0;
+    background: none;
+    
+}
+.nav__toogle::before {
+    content: 'MENU';
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav__toogle label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#nav__toogle {
+    display: none;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+}
+.navigation li {
+    list-style: none;
+    font-size: 16px;
+    
+}
+
+.navigation li:not(:last-child){
+    margin-right: 45px;
+}
+.navigation i {  
+    color: #a6a6a6;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+}
+.promo__background {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.promo {
+    max-width: 380px;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.promo h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.promo p {
+    font-size: 16px;
+    color: #283136;
+    line-height: 25px;
+    margin-bottom: 45px;
+}
+.promo button {
+    width: 240px;
+    height: 50px;
+    
+    color: white;
+    font-size: 16px;
+    background-color: #fb565a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.promo button:hover {
+    border-radius: 50%;
+    background-color: orange;
+    transition: .10s linear;
+}
+.promo__img {
+    flex-basis: 60%;
+}
+.promo__img img {
+    max-width: 100%;
+    
+}
+
+.wrapper__icons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 45%;
+    top: 85%;
+    
+}
+.icons {
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    
+}
+.icons i {
+    font-size: 10px;
+    color: #c2c2c2;
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    
+    
+}
+.icons:not(:last-child) {
+    margin-right: 15px;
+}
+.wrapper__1 {
+    display: grid;
+    grid-template-columns:25% 25% 25%;
+    grid-gap:100px;
+    justify-items: center;
+    padding-top: 80px;
+}
+.wrap__info h2 {
+   text-transform: uppercase;
+   font-size: 24px;
+   margin-top: 30px;
+}
+.wrap__info p {
+    font-size: 16px;
+    color: #283136;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.wrap__info button {
+    width: 160px;
+    height: 50px;
+    margin-bottom: 80px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button1 {
+    background-color: #fb565a;
+}
+.button1:hover {
+    border-radius: 50%;
+    background-color: orange;
+    transition: .10s linear;
+}
+.button2 {
+    background-color: #00ca74;
+}
+.button2:hover {
+    border-radius: 50%;
+    background-color: turquoise;
+    transition: .10s linear;
+}
+.button3 {
+    background-color: #efc84a;
+}
+.button3:hover {
+    border-radius: 50%;
+    background-color: yellowgreen;
+    transition: .10s linear;
+}
+hr {
+    color: #eeeeee;
+    opacity: 0.3;
+}
+.info {
+    width: 650px;
+    
+}
+.info h2 {
+    font-size: 45px;
+    margin-top: 90px;
+    margin-bottom: 45px;
+}
+.info p {
+    font-size: 16px;
+    color: #283136;
+    margin-bottom: 30px;
+}
+.info h3 {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.info li {
+    list-style: none;
+    color: #283136;
+    font-size: 16px;
+}
+.info li:before {
+    content:'\f068';
+    font-family: 'Fontawesome';
+    color: #fb565a;
+    margin-right: 10px;
+}
+.info li:not(:last-child) {
+    margin-bottom: 20px;
+}
+.wrapper__information {
+    display: flex;
+    justify-content: space-between;
+}
+.info__img {
+    margin-top: 45px;
+}
+.info__img img {
+    margin-bottom: 40px;
+}
+.info__img h3 {
+    margin-bottom: 50px;
+}
+.info__p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 45px;
+}
+.info__li ul {
+    display: flex;
+    justify-content: space-between;
+}
+.info__li li {
+    width: 100px;
+    font-size: 16px;
+    list-style: none;
+    color: #283136;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.wrapper__logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.wrapper__logos img {
+    max-height: 80px;
+    
+}
+.iframe {
+    width: 100%;
+    height: 415px;
+    border: 0;
+    
+    
+}
+.map {
+    position: relative;
+}
+
+.map__info {
+    width: 320px;
+    height: 310px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.map__info h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+.map__info p {
+    font-size: 16px;
+    color: #283136;
+    margin-bottom: 20px;
+}
+
+.map__info button {
+    width: 220px;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: #fb565a;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+.footer__info {
+    padding: 70px 0;
+}
+.footer__info {
+    display: flex;
+    align-items: center;
+}
+.footer__icons {
+    display: flex;
+    justify-content: start;
+    
+    margin-right: 140px;
+}
+.footer__icons__i {
+    width: 80px;
+    height: 80px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    position: relative;
+}
+.footer__icons__i i {
+    position: absolute;
+    color: white;
+   font-size: 33px;
+   right: 36%;
+    top: 31%;
+}
+.footer__icons__i:not(:last-child) {
+    margin-right: 10px;
+}
+.footer__text {
+    
+}
+.footer__text h2 {
+   font-size: 36px;
+   margin-bottom: 20px;
+}
+.footer__text p {
+    font-size: 16px;
+    color: #283136;
+}
